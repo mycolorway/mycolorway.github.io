@@ -84,6 +84,7 @@ main {
   bottom: 20px;
   left: 0;
   font-size: 12px;
+  opacity: 0.8;
 }
 
 .source {
