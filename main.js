@@ -21,7 +21,8 @@ request.onload = function() {
   var image = new Image();
   image.onload = function () {
     document.body.style.backgroundImage = `url(${data.urls.full})`;
-    document.body.querySelector('main').insertAdjacentHTML('beforeend', `<div class="source">Photo by <a href="${data.links.html}" target="_blank">${data.user.name}</a></div>`)
+    document.body.querySelector('main')
+    .insertAdjacentHTML('beforeend', `<div class="source">Photo by <a href="${data.links.html}?utm_source=Mycolorway&utm_medium=referral" target="_blank">${data.user.name}</a> on <a href="https://unsplash.com?utm_source=Mycolorway&utm_medium=referral" target="_blank">Unsplash</a></div>`)
   }
 
   image.src = data.urls.full;
